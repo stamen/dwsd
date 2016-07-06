@@ -14,6 +14,8 @@ to swap in your own data and leverage [hundreds of examples](http://blockbuilder
 
 ## Servers and clients, rasters and vectors
 
+See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/) (to be updated)
+
 # Act I: data is part of design
 
 ## Data preparation
@@ -24,11 +26,12 @@ to swap in your own data and leverage [hundreds of examples](http://blockbuilder
   * generalization is not just for file size, it's also important for the _look_ of the map
   * [Use the Brexit data as example]
 
-* A tour through the wonderful world of Natural Earth datasets
+* A tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
   * Not just what are they, but _why_ are they
 
 * Data precision
-  * You don't really need those 8 digits in your decimal degrees
+  * You don't really need those 8 digits in your decimal degrees: see [geojson-precision](https://www.npmjs.com/package/geojson-precision)
+  * See [Decimal degrees on Wikipedia](https://en.wikipedia.org/wiki/Decimal_degrees)
 
 # Act II: numbers to images
 
@@ -40,10 +43,10 @@ _Why_ do they matter?
 
 AKA how to lie with maps:
 
-Equal Interval, Quantiles, Natural Breaks
+Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ocks.org/mkfreeman/raw/01c5c8464a1f837c6c137e079c9218d0/)
 (Note that names from GIS are not the same as in D3)
 
-[Example: value-by-alpha US election]
+[Example: [value-by-alpha US election](http://bl.ocks.org/almccon/cb30a0f6bdfa2aa5b15f8022b82bc8b1)]
 
 ## Labels
 
@@ -55,7 +58,7 @@ Equal Interval, Quantiles, Natural Breaks
 
 ## Leaflet layer stacking
 
-* [Nat Geo Amazonia examples]
+* [Nat Geo Amazonia examples](https://hi.stamen.com/exploring-the-amazon-with-code-and-data-5750afec6ef2)
 
 ## Designing with big(-ish) data
 
@@ -63,11 +66,13 @@ Equal Interval, Quantiles, Natural Breaks
 
 * Heatmaps: love them or hate them
 
-* Hexbins [caliparks examples]
+* Hexbins [caliparks examples](https://stamen.cartodb.com/u/stamen-org/viz/9499c9a6-80cd-11e4-9e9b-f23c91504230/public_map)
 
 ## Linked views
 
 * [Examples from American Panorama]
+  * [Forced Migration](http://dsl.richmond.edu/panorama/forcedmigration)
+  * [Foreign Born](http://dsl.richmond.edu/panorama/foreignborn)
 
 ## Some thoughts on design
 ...culminate with some general design principles and talk about the design process w/ ER
