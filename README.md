@@ -16,6 +16,10 @@ to swap in your own data and leverage [hundreds of examples](http://blockbuilder
 
 See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/) (to be updated)
 
+How things have changed!
+
+![old anatomy slide](https://raw.githubusercontent.com/maptime/anatomy-of-a-web-map/gh-pages/images/anatomy-of-a-web-map.png)
+
 # Act I: data is part of design
 
 ## Data preparation
@@ -52,7 +56,11 @@ Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ock
 
 ## Proportional symbols
 
+Example that transitions between bars, boxes, circles, spheres...
+
 ## Labels
+
+One of the most difficult things to do programmatically... 
 
 ## Legends
 
