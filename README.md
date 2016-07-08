@@ -35,6 +35,8 @@ How things have changed!
 * A tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
   * Not just what are they, but _why_ are they
 
+[10m, 50m, 110m comparison](http://bl.ocks.org/almccon/b2d9eaea25b73a16a0ffeb3a2485054c)
+
 * Data precision
   * You don't really need those 8 digits in your decimal degrees: see [geojson-precision](https://www.npmjs.com/package/geojson-precision)
   * See [Decimal degrees on Wikipedia](https://en.wikipedia.org/wiki/Decimal_degrees)
