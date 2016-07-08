@@ -24,7 +24,9 @@ See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/) (to be upda
 
 * Mapshaper and TopoJSON
   * generalization is not just for file size, it's also important for the _look_ of the map
-  * [Use the Brexit data as example]
+  * [Use the []Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
+
+![mapshaper](img/mapshaper uk.gif)
 
 * A tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
   * Not just what are they, but _why_ are they
@@ -47,6 +49,8 @@ Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ock
 (Note that names from GIS are not the same as in D3)
 
 [Example: [value-by-alpha US election](http://bl.ocks.org/almccon/cb30a0f6bdfa2aa5b15f8022b82bc8b1)]
+
+## Proportional symbols
 
 ## Labels
 
