@@ -22,9 +22,9 @@ See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/) (to be upda
 
 ## Generalization
 
-* Mapshaper and TopoJSON
+* [Mapshaper](http://www.mapshaper.org/) and TopoJSON
   * generalization is not just for file size, it's also important for the _look_ of the map
-  * [Use the []Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
+  * [Use the [Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
 
 ![mapshaper](img/mapshaper uk.gif)
 
