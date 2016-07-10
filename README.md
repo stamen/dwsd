@@ -98,7 +98,12 @@ Map of the world, consider a [Winkel Tripel](https://bl.ocks.org/mbostock/368267
 
 For a city, maybe it doesn't matter if you use Mercator.
 
-BUT! Don't try to compare two city maps side-by-side using Mercator... the scale will be off! Use [Leaflet Control.Scale](http://leafletjs.com/reference.html#control-scale)
+BUT! Don't try to compare two city maps side-by-side using Mercator... the scale will be off!
+
+**[4) Leaflet with scale bar and URL location](https://github.com/stamen/dwsd/issues/4)**
+[<img src="https://raw.githubusercontent.com/stamen/dwsd/master/img/leaflet_scale_hash.gif">](https://github.com/stamen/dwsd/issues/4)
+
+Use [Leaflet Control.Scale](http://leafletjs.com/reference.html#control-scale)
 
 ### Projected maps vs projected data
 
