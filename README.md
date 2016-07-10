@@ -148,11 +148,19 @@ AKA how to lie with maps:
 Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ocks.org/mkfreeman/raw/01c5c8464a1f837c6c137e079c9218d0/)
 (Note that names from GIS are not the same as in D3)
 
-[Example: [value-by-alpha US election](http://bl.ocks.org/almccon/cb30a0f6bdfa2aa5b15f8022b82bc8b1)]
+**[5) USA Choropleth](https://github.com/stamen/dwsd/issues/5)**
+[<img src="img/usa_choropleth.png">](https://github.com/stamen/dwsd/issues/5)
 
 Also, normalize your data by _something_ (usually population). In our case, our data already comes with a "pct" column, so it's already normalized.
 
+But sometimes you _want_ to show the relative raw values too. Here's a way to do that, called a "value by alpha" choropleth:
+
+**[6) Value-by-alpha Choropleth](https://github.com/stamen/dwsd/issues/6)**
+[<img src="img/value-by-alpha_choropleth.png">](https://github.com/stamen/dwsd/issues/6)
+
 ## Color
+
+Sorry, for election maps you kinda have to choose the awful blue-purple-red colors. It's the law. But for any other kind of map, please choose something better.
 
 Who doesn't love ColorBrewer? But have you really spent some quality time [at the source?](http://colorbrewer2.org/)
 
@@ -165,18 +173,22 @@ And of course you want to be color-blind friendly, so can we recommend [Color Or
 First, let's switch our choropleth map to a point map of centroids. (dipping back into the data section)
 
 First, let's try using `d3.geo.centroid`:
-[USA 2012 presidential election (slow AF version)](http://bl.ocks.org/almccon/991e064a6680fed4726076d87406590c)
+**[7) Proportional symbols with d3.geo.centroid](https://github.com/stamen/dwsd/issues/7)**
 
 Why is it so slow? Let's pre-generate those centroids:
 ![create centroids](img/carto_create_centroids.gif)
 
 Now it's much snappier!
-[USA 2012 presidential election centroids](http://bl.ocks.org/almccon/461d610e94d12d0a3cca8e530d3b03cd)
+**[8) Proportional symbols with pre-generated centroids](https://github.com/stamen/dwsd/issues/8)**
+[<img src="img/proportional_circles.png">](https://github.com/stamen/dwsd/issues/8)
 
 Okay, back to proportional symbols! Choose your symbols wisely, and scale your symbols appropriately:
   * [bars](http://bl.ocks.org/almccon/243e4a79de9257980fe1a0e4bc618dfc) scale linearly
   * boxes scale with square root of the value
   * [circles](http://bl.ocks.org/almccon/461d610e94d12d0a3cca8e530d3b03cd) also with the square root ([but supposedly people can't accurately judge circle sizes](https://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/))   * spheres scale with the cube root (but you really shouldn't use them anyway)
+
+**[9) Proportional bars with pre-generated centroids](https://github.com/stamen/dwsd/issues/9)**
+[<img src="img/proportional_bars.png">](https://github.com/stamen/dwsd/issues/9)
 
 ## Legends
 
