@@ -79,11 +79,15 @@ Map of the world, consider a [Winkel Tripel](https://bl.ocks.org/mbostock/368267
 
 For a city, maybe it doesn't matter if you use Mercator.
 
-BUT! Don't try to compare two city maps side-by-side using Mercator... the scale will be off!
+BUT! Don't try to compare two city maps side-by-side using Mercator... the scale will be off! Use [Leaflet Control.Scale](http://leafletjs.com/reference.html#control-scale)
 
 ### Projected maps vs projected data
 
 Also, projections are not just about how you present your data. Sometimes your coordinates are already projected on disk! GeoJSON is _almost always_ stored in latitude/longitude degrees, but other data sources might be stored in meters, or feet, or pixels (like TopoJSON).
+
+See [EPSG:2163 Coordinates](http://bl.ocks.org/mbostock/5050837).
+
+What's "2163" mean? Let's talk about that...
 
 ### Can I get your projection's number? :phone emoji:
 
@@ -128,7 +132,6 @@ One approach: collision-detection for labels: http://bl.ocks.org/hugolpz/4295506
 
 ![bestschoolday_dorling](https://cloud.githubusercontent.com/assets/1212178/16709323/52d4b376-45c2-11e6-9850-fefb06dbe714.gif)
 
-
 For tiled maps, you should try to get your labels on top of your data.
 
 CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto.com/blog/let-your-labels-shine/)
@@ -138,7 +141,7 @@ CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto
 
 ## Leaflet layer stacking
 
-* [Nat Geo Amazonia examples](https://hi.stamen.com/exploring-the-amazon-with-code-and-data-5750afec6ef2)
+* [National Geographic Amazonia example](http://www.nationalgeographic.com/climate-change/explore-amazonia/#/Map/Compare/), and [Zan Armstrong's blog post](https://hi.stamen.com/exploring-the-amazon-with-code-and-data-5750afec6ef2)
 
 ## Designing with big(-ish) data
 
