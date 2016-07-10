@@ -50,12 +50,16 @@ Note, if you love the command line, you can do most of this with [GDAL](http://g
   * generalization is not just for file size, it's also important for the _look_ of the map
   * [Use the [Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
 
+2) [Generalizing with Mapshaper](https://github.com/stamen/dwsd/issues/2)
+
 ![mapshaper](img/mapshaper uk.gif)
 
-* A tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
+### Natural Earth
+
+Let's do a tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
   * Not just what are they, but _why_ are they?
 
-Three levels of generalization: [10m, 50m, 110m comparison](http://bl.ocks.org/almccon/b2d9eaea25b73a16a0ffeb3a2485054c)
+3) [Comparing levels of generalization in Natural Earth](https://github.com/stamen/dwsd/issues/3)
 
 Also note the [boundary lines](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/) files. Why would we need those when we have the outlines of the countries already?
 
@@ -63,7 +67,7 @@ For one thing, you can apply a thick line to divide countries from each other wi
 
 (note, you can also do the same thing with TopoJSON)
 
-* Data precision
+### Data precision
   * You don't really need those 8 digits in your decimal degrees: see [geojson-precision](https://www.npmjs.com/package/geojson-precision)
   * See [Decimal degrees on Wikipedia](https://en.wikipedia.org/wiki/Decimal_degrees)
 
@@ -108,6 +112,12 @@ What's "2163" mean? Let's talk about that...
 ### Can I get your projection's number? :phone emoji:
 
 D3 is convenient and it gives all these projections _names_, but if you're using anything other than D3, you might need to know your projection's [EPSG code](http://epsg.io).
+
+A few you might memorize after a while:
+  * [EPSG:4326](http://epsg.io/4326) "unprojected" latitude / longitude (a "geographic" projection)
+  * [EPSG:3857](http://epsg.io/3857) Web ("Google") Mercator  (old docs will use EPSG:900913)
+  * [EPSG:2163](http://epsg.io/2163) [US National Atlas Azimuthal Equal Area](http://bl.ocks.org/mbostock/5050837)
+  * [EPSG:3310](http://epsg.io/3310) [California Albers](http://bl.ocks.org/mbostock/5557726)
 
 And sometimes, just sometimes, all those off-the-shelf projections just aren't enough, and you have to make your own projection. Since a projection is just a mathematical formula, it's not that hard to modify existing ones. See [oceanplanning.org](http://oceanplanning.org/)
 
