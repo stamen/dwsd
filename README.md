@@ -36,6 +36,9 @@ You might need to use [QGIS](qgis.org), but I'd recommend CartoDB (now "[CARTO](
 
 Let's load some data in CARTO, try the web editor to draw features, edit them, etc.
 
+1) [Getting started with CARTO](https://github.com/stamen/dwsd/issues/1)
+![filter data with CARTO](img/carto_filter_data.gif)
+
 Look at the SQL viewer, and if you're familiar with SQL you can do a lot to transform your data really easily! Let's try extracting just a few features.
 
 Note, if you love the command line, you can do most of this with [GDAL](http://gdal.org)'s program `ogr2ogr`, especially with [@dwtkns's fantastic GDAL cheat sheet](https://github.com/dwtkns/gdal-cheat-sheet). Or you can install [PostGIS](http://postgis.net) locally if you like the database interface of CARTO.
