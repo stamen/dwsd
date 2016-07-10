@@ -56,7 +56,7 @@ Three levels of generalization: [10m, 50m, 110m comparison](http://bl.ocks.org/a
 
 Also note the [boundary lines](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/) files. Why would we need those when we have the outlines of the countries already?
 
-For one thing, you can apply a thick line to divide countries from each other without adding a thick stroke along their coastlines, for example.
+For one thing, you can apply a thick line to divide countries from each other without adding a thick stroke along their coastlines, [for example](https://mappingmashups.carto.com/viz/9a44fc38-9ee4-4741-bc4c-2c56b37f9d6f/public_map).
 
 (note, you can also do the same thing with TopoJSON)
 
@@ -114,6 +114,8 @@ Or, see the ["Hill-Akella Manhattan Projection"](https://mappingmashups.carto.co
 Jump over to CartoDB again: how do projections work here?
 
 What happens if we make it _think_ the data is in one projection, but it's really in another?
+
+With [the right PostGIS query](https://mappingmashups.carto.com/viz/2421c766-1305-11e6-a981-0ecd1babdde5/public_map) we are able to use raster tiles in non-Mercator projections! Just don't try to overlay them with any other raster maps!
 
 # Act II and a half
 
