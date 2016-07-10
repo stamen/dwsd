@@ -126,15 +126,16 @@ Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ock
 
 Also, normalize your data by _something_ (usually population).
 
-<!-
 ## Color
 
-https://eagereyes.org/basics/rainbow-color-map
--->
+Rainbow color ramps considered harmful: https://eagereyes.org/basics/rainbow-color-map
 
 ## Proportional symbols
 
-Example that transitions between bars, boxes, circles, spheres...
+Choose your symbols wisely, and scale your symbols appropriately
+  * bars scale linearly
+  * boxes scale with square root of the value
+  * circles also with the square root ([but supposedly people can't accurately judge circle sizes](https://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/))   * spheres scale with the cube root (but you really shouldn't use them anyway)
 
 ## Legends
 
@@ -144,7 +145,7 @@ Example that transitions between bars, boxes, circles, spheres...
 
 ## Labels
 
-One of the most difficult things to do programmatically... 
+Labels are one of the most difficult things to do programmatically...
 
 You want to avoid text overlaps at all costs. Not just for maps, for charts too!
 
