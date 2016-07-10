@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This workshop is designed to be very hands-on, but slightly _less_ hands-on than [Part 1: Working with spatial data for the web](http://github.com/enjalot/wwsd).
+This workshop is designed to be very hands-on, but slightly _less_ hands-on than [Part 1: Working with spatial data for the web](http://github.com/enjalot/wwsd). We will use some of the same tools as we did last time (like Leaflet and D3.js), and we'll look at a few new ones (like CARTO). 
 
 We will look at many examples that can be extended as exercises, and many more examples that will give you a taste of the possibilities out there, and some leads you can follow if you want to learn more.
 
@@ -20,11 +20,9 @@ Some [maps we've made at Stamen](http://stamen.com/maps/), and maps we love made
 
 ## Servers and clients, rasters and vectors
 
-See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/) (to be updated)
+See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/)
 
-How things have changed!
-
-![old anatomy slide](https://raw.githubusercontent.com/maptime/anatomy-of-a-web-map/gh-pages/images/anatomy-of-a-web-map.png)
+![anatomy slide](https://raw.githubusercontent.com/maptime/anatomy-of-a-web-map/gh-pages/images/anatomy-of-a-web-map.png)
 
 # Act I: data is part of design
 
@@ -44,7 +42,7 @@ Note, if you love the command line, you can do most of this with [GDAL](http://g
 
 ## Generalization
 
-* [Mapshaper](http://www.mapshaper.org/) and TopoJSON
+* [Mapshaper](http://www.mapshaper.org/) and [TopoJSON](https://github.com/mbostock/topojson)
   * Review, what is TopoJSON?
   * generalization is not just for file size, it's also important for the _look_ of the map
   * [Use the [Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
@@ -106,6 +104,10 @@ What's "2163" mean? Let's talk about that...
 
 D3 is convenient and it gives all these projections _names_, but if you're using anything other than D3, you might need to know your projection's [EPSG code](http://epsg.io).
 
+And sometimes, just sometimes, all those off-the-shelf projections just aren't enough, and you have to make your own projection. Since a projection is just a mathematical formula, it's not that hard to modify existing ones. See [oceanplanning.org](http://oceanplanning.org/)
+
+Or, see the ["Hill-Akella Manhattan Projection"](https://mappingmashups.carto.com/viz/0a755882-bfc7-11e5-a827-0e31c9be1b51/public_map)
+
 ### How to lie to your mapping tools
 Jump over to CartoDB again: how do projections work here?
 
@@ -124,9 +126,11 @@ Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ock
 
 Also, normalize your data by _something_ (usually population).
 
+<!-
 ## Color
 
 https://eagereyes.org/basics/rainbow-color-map
+-->
 
 ## Proportional symbols
 
@@ -171,9 +175,11 @@ CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto
 
 ## Linked views
 
-* [Examples from American Panorama]
+* Examples from American Panorama
   * [Forced Migration](http://dsl.richmond.edu/panorama/forcedmigration)
   * [Foreign Born](http://dsl.richmond.edu/panorama/foreignborn)
+  * [The Panorama toolkit](http://github.com/americanpanorama/panorama)
 
-## Some thoughts on design
-...culminate with some general design principles and talk about the design process w/ ER
+## Some closing thoughts, pet peeves, and our map checklist
+
+* http://content.stamen.com/stamens-checklist-for-maps
