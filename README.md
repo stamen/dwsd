@@ -84,7 +84,8 @@ Unless you're using tiles, you probably shouldn't use Mercator.
 
 But wait, why do tiled maps use Mercator? Let's talk about that.
 
-Let's start with the [zoom 0 tile:](http://maps.stamen.com/toner/#0/0/0) [<img src="img/toner-zoom0.png">](http://maps.stamen.com/toner/#0/0/0)
+Let's start with the [zoom 0 tile:](http://maps.stamen.com/toner/#0/0/0)
+[<img src="img/toner-zoom0.png">](http://maps.stamen.com/toner/#0/0/0)
 
 ### Projections as a design decision:
 
