@@ -36,8 +36,8 @@ You might need to use [QGIS](qgis.org), but I'd recommend CartoDB (now "[CARTO](
 
 Let's load some data in CARTO, try the web editor to draw features, edit them, etc.
 
-1) [Getting started with CARTO](https://github.com/stamen/dwsd/issues/1)
-![filter data with CARTO](img/carto_filter_data.gif)
+**[1) Getting started with CARTO](https://github.com/stamen/dwsd/issues/1)**
+[<img src ="img/carto_filter_data.gif">](https://github.com/stamen/dwsd/issues/1)
 
 Look at the SQL viewer, and if you're familiar with SQL you can do a lot to transform your data really easily! Let's try extracting just a few features.
 
@@ -50,16 +50,15 @@ Note, if you love the command line, you can do most of this with [GDAL](http://g
   * generalization is not just for file size, it's also important for the _look_ of the map
   * [Use the [Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
 
-2) [Generalizing with Mapshaper](https://github.com/stamen/dwsd/issues/2)
-
-![mapshaper](img/mapshaper uk.gif)
+**[2) Generalizing with Mapshaper](https://github.com/stamen/dwsd/issues/2)**
+[<img src="img/mapshaper uk.gif">](https://github.com/stamen/dwsd/issues/2)
 
 ### Natural Earth
 
-Let's do a tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
-  * Not just what are they, but _why_ are they?
+Let's do a tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets. Not just what are they, but _why_ are they?
 
-3) [Comparing levels of generalization in Natural Earth](https://github.com/stamen/dwsd/issues/3)
+**[3) Comparing levels of generalization in Natural Earth](https://github.com/stamen/dwsd/issues/3)**
+[<img src="img/natural_earth_scales.png">](https://github.com/stamen/dwsd/issues/3)
 
 Also note the [boundary lines](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/) files. Why would we need those when we have the outlines of the countries already?
 
