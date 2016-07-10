@@ -36,18 +36,31 @@ All the tools we will look at can be used for data exploration, your data needs 
 
 You might need to use [QGIS](qgis.org), but I'd recommend CartoDB (now "[CARTO](http://carto.com)") for most things!
 
+Let's load some data in CARTO, try the web editor to draw features, edit them, etc.
+
+Look at the SQL viewer, and if you're familiar with SQL you can do a lot to transform your data really easily! Let's try extracting just a few features.
+
+Note, if you love the command line, you can do most of this with [GDAL](http://gdal.org)'s program `ogr2ogr`, especially with [@dwtkns's fantastic GDAL cheat sheet](https://github.com/dwtkns/gdal-cheat-sheet). Or you can install [PostGIS](http://postgis.net) locally if you like the database interface of CARTO.
+
 ## Generalization
 
 * [Mapshaper](http://www.mapshaper.org/) and TopoJSON
+  * Review, what is TopoJSON?
   * generalization is not just for file size, it's also important for the _look_ of the map
   * [Use the [Brexit data](http://bl.ocks.org/almccon/7257fe68b3bfa4199e154016d983cddc) as example]
 
 ![mapshaper](img/mapshaper uk.gif)
 
 * A tour through the wonderful world of [Natural Earth](http://www.naturalearthdata.com/) datasets
-  * Not just what are they, but _why_ are they
+  * Not just what are they, but _why_ are they?
 
-[10m, 50m, 110m comparison](http://bl.ocks.org/almccon/b2d9eaea25b73a16a0ffeb3a2485054c)
+Three levels of generalization: [10m, 50m, 110m comparison](http://bl.ocks.org/almccon/b2d9eaea25b73a16a0ffeb3a2485054c)
+
+Also note the [boundary lines](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/) files. Why would we need those when we have the outlines of the countries already?
+
+For one thing, you can apply a thick line to divide countries from each other without adding a thick stroke along their coastlines, for example.
+
+(note, you can also do the same thing with TopoJSON)
 
 * Data precision
   * You don't really need those 8 digits in your decimal degrees: see [geojson-precision](https://www.npmjs.com/package/geojson-precision)
@@ -93,7 +106,12 @@ What's "2163" mean? Let's talk about that...
 
 D3 is convenient and it gives all these projections _names_, but if you're using anything other than D3, you might need to know your projection's [EPSG code](http://epsg.io).
 
-[Jump over to CartoDB]
+### How to lie to your mapping tools
+Jump over to CartoDB again: how do projections work here?
+
+What happens if we make it _think_ the data is in one projection, but it's really in another?
+
+# Act II and a half
 
 ## Classification and choropleths
 
