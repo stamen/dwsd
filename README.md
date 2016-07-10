@@ -78,6 +78,8 @@ Unless you're using tiles, you probably shouldn't use Mercator.
 
 But wait, why do tiled maps use Mercator? Let's talk about that.
 
+Let's start with the zoom 0 tile: ![zoom 0](https://raw.githubusercontent.com/maptime/anatomy-of-a-web-map/gh-pages/images/tiles/zoom0.png)
+
 ### Projections as a design decision:
 
 If you're making a choropleth (we'll talk about these later), use an equal area projection.
