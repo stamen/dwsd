@@ -128,7 +128,8 @@ A few you might memorize after a while:
 
 And sometimes, just sometimes, all those off-the-shelf projections just aren't enough, and you have to make your own projection. Since a projection is just a mathematical formula, it's not that hard to modify existing ones. See [oceanplanning.org](http://oceanplanning.org/)
 
-Or, see the ["Hill-Akella Manhattan Projection"](https://mappingmashups.carto.com/viz/0a755882-bfc7-11e5-a827-0e31c9be1b51/public_map)
+Or, see what I like to call the ["Hill-Akella Manhattan Projection"](https://mappingmashups.carto.com/viz/0a755882-bfc7-11e5-a827-0e31c9be1b51/public_map)
+[<img src='img/manhattan_projection.png'>](https://mappingmashups.carto.com/viz/0a755882-bfc7-11e5-a827-0e31c9be1b51/public_map)
 
 ### How to lie to your mapping tools
 Jump over to CartoDB again: how do projections work here?
