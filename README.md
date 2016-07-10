@@ -137,6 +137,7 @@ Jump over to CartoDB again: how do projections work here?
 What happens if we make it _think_ the data is in one projection, but it's really in another?
 
 With [the right PostGIS query](https://mappingmashups.carto.com/viz/2421c766-1305-11e6-a981-0ecd1babdde5/public_map) we are able to use raster tiles in non-Mercator projections! Just don't try to overlay them with any other raster maps!
+[<img src='img/cartodb_reprojected.png'>](https://mappingmashups.carto.com/viz/2421c766-1305-11e6-a981-0ecd1babdde5/public_map)
 
 # Act II and a half
 
@@ -149,7 +150,7 @@ Equal Interval, Quantiles, Natural Breaks: [example by @mkfreeman](http://bl.ock
 
 [Example: [value-by-alpha US election](http://bl.ocks.org/almccon/cb30a0f6bdfa2aa5b15f8022b82bc8b1)]
 
-Also, normalize your data by _something_ (usually population).
+Also, normalize your data by _something_ (usually population). In our case, our data already comes with a "pct" column, so it's already normalized.
 
 ## Color
 
