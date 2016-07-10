@@ -104,9 +104,11 @@ BUT! Don't try to compare two city maps side-by-side using Mercator... the scale
 
 Also, projections are not just about how you present your data. Sometimes your coordinates are already projected on disk! GeoJSON is _almost always_ stored in latitude/longitude degrees, but other data sources might be stored in meters, or feet, or pixels (like TopoJSON).
 
-See [EPSG:2163 Coordinates](http://bl.ocks.org/mbostock/5050837).
+For example, [here's a map](http://bl.ocks.org/almccon/fb125b016b5c9afad99b) that uses a pre-projected topojson file and a null projection.
 
-What's "2163" mean? Let's talk about that...
+What do these coordinates look like? See [EPSG:2163 Coordinates](http://bl.ocks.org/mbostock/5050837).
+
+Okay, now what's "2163" mean? Let's talk about that...
 
 ### Can I get your projection's number? :phone emoji:
 
@@ -144,14 +146,29 @@ Also, normalize your data by _something_ (usually population).
 
 ## Color
 
-Rainbow color ramps considered harmful: https://eagereyes.org/basics/rainbow-color-map
+Who doesn't love ColorBrewer? But have you really spent some quality time [at the source?](http://colorbrewer2.org/)
+
+Rainbow color ramps [considered harmful](https://eagereyes.org/basics/rainbow-color-map), please don't use them!
+
+And of course you want to be color-blind friendly, so can we recommend [Color Oracle](http://colororacle.org/)?
 
 ## Proportional symbols
 
-Choose your symbols wisely, and scale your symbols appropriately
-  * bars scale linearly
+First, let's switch our choropleth map to a point map of centroids. (dipping back into the data section)
+
+First, let's try using `d3.geo.centroid`:
+[USA 2012 presidential election (slow AF version)](http://bl.ocks.org/almccon/991e064a6680fed4726076d87406590c)
+
+Why is it so slow? Let's pre-generate those centroids:
+![create centroids](img/carto_create_centroids.gif)
+
+Now it's much snappier!
+[USA 2012 presidential election centroids](http://bl.ocks.org/almccon/461d610e94d12d0a3cca8e530d3b03cd)
+
+Okay, back to proportional symbols! Choose your symbols wisely, and scale your symbols appropriately:
+  * [bars](http://bl.ocks.org/almccon/243e4a79de9257980fe1a0e4bc618dfc) scale linearly
   * boxes scale with square root of the value
-  * circles also with the square root ([but supposedly people can't accurately judge circle sizes](https://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/))   * spheres scale with the cube root (but you really shouldn't use them anyway)
+  * [circles](http://bl.ocks.org/almccon/461d610e94d12d0a3cca8e530d3b03cd) also with the square root ([but supposedly people can't accurately judge circle sizes](https://makingmaps.net/2007/08/28/perceptual-scaling-of-map-symbols/))   * spheres scale with the cube root (but you really shouldn't use them anyway)
 
 ## Legends
 
@@ -165,7 +182,7 @@ Labels are one of the most difficult things to do programmatically...
 
 You want to avoid text overlaps at all costs. Not just for maps, for charts too!
 
-One approach: collision-detection for labels: http://bl.ocks.org/hugolpz/42955069888057aff8c2
+One approach: [collision-detection for labels](http://bl.ocks.org/hugolpz/42955069888057aff8c2)
 
 [[Best school day example](http://bestschoolday.huffingtonpost.com/#mt=bubbles&filter=total&geo=US) abbreviations on the dorling maps]
 
@@ -184,11 +201,12 @@ CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto
 
 ## Designing with big(-ish) data
 
-* Playing with opacity
-
-* Heatmaps: love them or hate them
+* Heatmaps: people either love them or hate them. They are usually _not_ normalized (that's kind of the point).
+![xkcd](https://imgs.xkcd.com/comics/heatmap.png)
 
 * Hexbins [caliparks examples](https://stamen.cartodb.com/u/stamen-org/viz/9499c9a6-80cd-11e4-9e9b-f23c91504230/public_map)
+
+* Playing with opacity and blending
 
 ## Linked views
 
