@@ -55,7 +55,7 @@ All the tools we will look at can be used for data exploration, your data needs 
 
 You might need to use [QGIS](qgis.org), but I'd recommend CartoDB (now "[CARTO](http://carto.com)") for most things!
 
-Let's load some data in CARTO, try the web editor to draw features, edit them, etc.
+Let's load some data in CARTO, try the web editor to draw features, edit them, etc. Note, you can get lots of interesting datasets to start with from CARTO's [Data Library](https://carto.com/data-library)
 
 **[1) Getting started with CARTO](https://github.com/stamen/dwsd/issues/1)**
 [<img src ="img/carto_filter_data.gif">](https://github.com/stamen/dwsd/issues/1)
