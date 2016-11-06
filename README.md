@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This workshop is designed to be very hands-on, but slightly _less_ hands-on than [Part 1: Working with spatial data for the web](http://github.com/enjalot/wwsd). We will use some of the same tools as we did last time (like Leaflet and D3.js), and we'll look at a few new ones (like CARTO). 
+This workshop is designed to be very hands-on, but slightly _less_ hands-on than the other park of Stamen's workshop series: [Working with spatial data for the web](http://github.com/stamen/wwsd). We will use some of the same tools that are covered in the other class (like Leaflet and D3.js), and we'll look at a few tools specific to today's class (like [CARTO](http://carto.com)).
 
 We will look at many examples that can be extended as exercises, and many more examples that will give you a taste of the possibilities out there, and some leads you can follow if you want to learn more.
 
@@ -12,6 +12,13 @@ It would be impossible to touch everything that we could
 find [interesting in web mapping](https://hi.stamen.com/an-ode-to-d3-js-projections-9d6477d6da0b#.1hr10rltk),
 so the hope is that after going through these three acts you will feel empowered
 to swap in your own data and leverage [hundreds of examples](http://blockbuilder.org/search#api=d3.geo.path) in your own data visualization projects!
+
+# Before we get started:
+
+We will be using two free online platforms for this class: GitHub (a website for sharing open source software and code), and CARTO (a user-friendly online mapping platform). If you don't have accounts on these two sites, please create accounts now:
+
+- [GitHub.com](http://github.com)
+- [CARTO.com](http://carto.com)
 
 # Prelude: the landscape
 
@@ -23,6 +30,14 @@ Some [maps we've made at Stamen](http://stamen.com/maps/), and maps we love made
 See: [Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/)
 
 ![anatomy slide](https://raw.githubusercontent.com/maptime/anatomy-of-a-web-map/gh-pages/images/anatomy-of-a-web-map.png)
+
+To understand the fundamentals of tiled web maps, we'll look at some very basic Leaflet maps (you don't need to fully understand the code quite yet)
+
+- [Leaflet starter](http://blockbuilder.org/almccon/6d632572739217d2804fd2d429b9fa23)
+
+- [Leaflet starter (with a Toner basemap)](http://bl.ocks.org/almccon/48ad757db4c4be5fee5cf046df0d94bc)
+
+- [Leaflet starter with GeoJSON overlay](http://bl.ocks.org/almccon/89c3b7da30f8686d3777fdeb65d73250)
 
 # Act I: data is part of design
 
