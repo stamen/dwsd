@@ -243,14 +243,14 @@ CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto
 
 ## Designing with big(-ish) data
 
-* Heatmaps: people either love them or hate them. They are usually _not_ normalized (that's kind of the point).
+* [Heatmaps](http://leaflet.github.io/Leaflet.heat/demo/): people either love them or hate them. They are usually _not_ normalized (that's kind of the point).
 ![xkcd](https://imgs.xkcd.com/comics/heatmap.png)
 
-* Hexbins [caliparks examples](https://stamen.cartodb.com/u/stamen-org/viz/9499c9a6-80cd-11e4-9e9b-f23c91504230/public_map)
+* Hexbins are another trendy way to deal with large numbers of points. Here's an example mapping [social media usage in California parks](https://stamen.cartodb.com/u/stamen-org/viz/9499c9a6-80cd-11e4-9e9b-f23c91504230/public_map)
 
-* Playing with opacity and blending
+* Adjusting layer opacity and blending styles can create powerful effects, as in [Trees, Cabs, Crime](http://maps.stamen.com/trees-cabs-crime) or our climate change maps for the [Audubon Society](http://stamen.com/work/audubon-society-climate-maps/)
 
-## Linked views
+## Linked views: combining maps with other charts
 
 * Examples from American Panorama
   * [Forced Migration](http://dsl.richmond.edu/panorama/forcedmigration)
