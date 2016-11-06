@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This workshop is designed to be very hands-on, but slightly _less_ hands-on than the other park of Stamen's workshop series: [Working with spatial data for the web](http://github.com/stamen/wwsd). We will use some of the same tools that are covered in the other class (like Leaflet and D3.js), and we'll look at a few tools specific to today's class (like [CARTO](http://carto.com)).
+This workshop is designed to be very hands-on, but slightly _less_ hands-on than the other park of Stamen's workshop series: [Working with spatial data for the web](http://github.com/stamen/wwsd). We will use some of the same tools that are covered in the other class (like [Leaflet](http://leafletjs.com) and [D3.js](http://d3js.com)), and we'll look at a few tools specific to today's class (like [CARTO](http://carto.com)).
 
 We will look at many examples that can be extended as exercises, and many more examples that will give you a taste of the possibilities out there, and some leads you can follow if you want to learn more.
 
@@ -38,6 +38,12 @@ To understand the fundamentals of tiled web maps, we'll look at some very basic 
 - [Leaflet starter (with a Toner basemap)](http://bl.ocks.org/almccon/48ad757db4c4be5fee5cf046df0d94bc)
 
 - [Leaflet starter with GeoJSON overlay](http://bl.ocks.org/almccon/89c3b7da30f8686d3777fdeb65d73250)
+
+For contrast, here are a few basic D3.js maps:
+
+- [D3 map demo](http://bl.ocks.org/almccon/6ab03506d2e3ff9d843f69fa2d5c29cf)
+
+- [D3 map using Winkel Tripel projection](http://bl.ocks.org/almccon/7cba55415b3bc19e1f383043746756f2)
 
 # Act I: data is part of design
 
@@ -155,7 +161,7 @@ What happens if we make it _think_ the data is in one projection, but it's reall
 With [the right PostGIS query](https://mappingmashups.carto.com/viz/2421c766-1305-11e6-a981-0ecd1babdde5/public_map) we are able to use raster tiles in non-Mercator projections! Just don't try to overlay them with any other raster maps!
 [<img src='img/cartodb_reprojected.png'>](https://mappingmashups.carto.com/viz/2421c766-1305-11e6-a981-0ecd1babdde5/public_map)
 
-# Act II and a half
+# Act III: communicating information on the map
 
 ## Classification and choropleths
 
@@ -229,7 +235,7 @@ For tiled maps, you should try to get your labels on top of your data.
 CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto.com/blog/let-your-labels-shine/)
 ...we'll talk a bit more about stacking tile layers after a break.
 
-# Act III: bringing it all together
+# Act IV: bonus material! Mixing and matching to bring it all together
 
 ## Leaflet layer stacking
 
