@@ -230,6 +230,8 @@ One approach: [collision-detection for labels](http://bl.ocks.org/hugolpz/429550
 
 ![bestschoolday_dorling](https://cloud.githubusercontent.com/assets/1212178/16709323/52d4b376-45c2-11e6-9850-fefb06dbe714.gif)
 
+Oh, and to make that dorling, check out [this](https://bl.ocks.org/veltman/33dbad5aa12d92b977fd29128eb5358e)
+
 For tiled maps, you should try to get your labels on top of your data.
 
 CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto.com/blog/let-your-labels-shine/)
