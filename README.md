@@ -235,6 +235,9 @@ Oh, and to make that dorling, check out [this](https://bl.ocks.org/veltman/33dba
 For tiled maps, you should try to get your labels on top of your data.
 
 CartoDB (now CARTO) does this by default: [Let your labels shine!](https://carto.com/blog/let-your-labels-shine/)
+
+For inserting labels in the middle of a stack of layers for MapboxGL, see [here](http://bl.ocks.org/almccon/42d7dd17cca8d717889d85eb4176b060)
+
 ...we'll talk a bit more about stacking tile layers after a break.
 
 # Act IV: bonus material! Mixing and matching to bring it all together
