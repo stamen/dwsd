@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This workshop is designed to be very hands-on, but slightly _less_ hands-on than the other park of Stamen's workshop series: [Working with spatial data for the web](http://github.com/stamen/wwsd). We will use some of the same tools that are covered in the other class (like [Leaflet](http://leafletjs.com) and [D3.js](http://d3js.com)), and we'll look at a few tools specific to today's class (like [CARTO](http://carto.com)).
+This workshop is designed to be very hands-on, but slightly _less_ hands-on than the other part of Stamen's workshop series: [Working with spatial data for the web](http://github.com/stamen/wwsd). Generally, we teach this class first, and WWSD second, but you can take the classes in either order. We will use some of the same tools that are covered in the other class (like [Leaflet](http://leafletjs.com) and [D3.js](http://d3js.com)), and we'll look at a few tools specific to today's class (like [CARTO](http://carto.com)).
 
 We will look at many examples that can be extended as exercises, and many more examples that will give you a taste of the possibilities out there, and some leads you can follow if you want to learn more.
 
